@@ -1,0 +1,280 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/interview-app-1.test"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "d0a2bb2e-5dc9-4862-b4f6-14a0bb0f1c09",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "GET api\/user",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/user",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/user"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/books",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/books",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/books"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"current_page\":1,\"data\":[{\"id\":1,\"title\":\"Ipsam hic error neque rerum quas porro.\",\"writer_id\":7,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":198.93,\"tags\":[\"quia\",\"cupiditate\",\"cumque\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":2,\"title\":\"Sunt esse suscipit rerum voluptatibus aut.\",\"writer_id\":6,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":183.86,\"tags\":[\"sapiente\",\"quia\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":3,\"title\":\"Aspernatur quo sint et nisi a.\",\"writer_id\":10,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":157.52,\"tags\":[\"cupiditate\",\"quia\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":4,\"title\":\"Omnis et qui beatae ea quibusdam.\",\"writer_id\":3,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":129.64,\"tags\":[\"voluptas\",\"impedit\",\"quia\",\"sapiente\",\"unde\",\"cumque\",\"voluptas\",\"repellendus\",\"quo\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":5,\"title\":\"Consequatur quia sequi voluptas omnis velit ut fuga quam.\",\"writer_id\":2,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":140.54,\"tags\":[\"sapiente\",\"quo\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":6,\"title\":\"Minus dolor vel earum omnis quidem quia omnis.\",\"writer_id\":6,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":103.71,\"tags\":[\"voluptas\",\"repellendus\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":7,\"title\":\"Impedit harum cupiditate molestiae dolores delectus.\",\"writer_id\":8,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":140.76,\"tags\":[\"sapiente\",\"cupiditate\",\"voluptas\",\"repellendus\",\"quo\",\"unde\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":8,\"title\":\"Voluptatem quis rerum vitae eius.\",\"writer_id\":9,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":100.08,\"tags\":[\"cupiditate\",\"quo\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":9,\"title\":\"Occaecati nisi reprehenderit sapiente eum necessitatibus aperiam.\",\"writer_id\":4,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":161.75,\"tags\":[\"cupiditate\",\"sapiente\",\"quia\",\"impedit\",\"quo\",\"unde\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":10,\"title\":\"Quas corrupti doloremque explicabo deserunt ratione.\",\"writer_id\":1,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":122.82,\"tags\":[\"voluptas\",\"repellendus\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":11,\"title\":\"Odit enim sit vitae.\",\"writer_id\":4,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":106.52,\"tags\":[\"cupiditate\",\"cumque\",\"quo\",\"impedit\",\"sapiente\",\"voluptas\",\"voluptas\",\"repellendus\",\"quia\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":12,\"title\":\"Veniam vero et pariatur explicabo quas.\",\"writer_id\":10,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":131.26,\"tags\":[\"impedit\",\"voluptas\",\"quia\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":13,\"title\":\"Soluta non aspernatur et sed molestiae quaerat.\",\"writer_id\":10,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":181.57,\"tags\":[\"unde\",\"cumque\",\"quia\",\"voluptas\",\"voluptas\",\"impedit\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":14,\"title\":\"Non tempore est dolores nulla velit.\",\"writer_id\":6,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":126.78,\"tags\":[\"cumque\",\"voluptas\",\"impedit\",\"unde\",\"quia\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"},{\"id\":15,\"title\":\"Eum iusto placeat exercitationem quis natus.\",\"writer_id\":9,\"cover_image\":\"https:\\\/\\\/images-na.ssl-images-amazon.com\\\/images\\\/I\\\/51Ga5GuElyL._AC_SX184_.jpg\",\"price\":153.85,\"tags\":[\"unde\",\"repellendus\",\"cupiditate\",\"impedit\",\"sapiente\"],\"created_at\":\"2024-05-01T05:31:13.000000Z\",\"updated_at\":\"2024-05-01T05:31:13.000000Z\"}],\"first_page_url\":\"http:\\\/\\\/interview-app-1.test\\\/api\\\/books?page=1\",\"from\":1,\"last_page\":2,\"last_page_url\":\"http:\\\/\\\/interview-app-1.test\\\/api\\\/books?page=2\",\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"active\":false},{\"url\":\"http:\\\/\\\/interview-app-1.test\\\/api\\\/books?page=1\",\"label\":\"1\",\"active\":true},{\"url\":\"http:\\\/\\\/interview-app-1.test\\\/api\\\/books?page=2\",\"label\":\"2\",\"active\":false},{\"url\":\"http:\\\/\\\/interview-app-1.test\\\/api\\\/books?page=2\",\"label\":\"Next &raquo;\",\"active\":false}],\"next_page_url\":\"http:\\\/\\\/interview-app-1.test\\\/api\\\/books?page=2\",\"path\":\"http:\\\/\\\/interview-app-1.test\\\/api\\\/books\",\"per_page\":15,\"prev_page_url\":null,\"to\":15,\"total\":20}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/books",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/books",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/books"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/books\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/books\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/books\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the book."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=UTF-8"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/books\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/books\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/books\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the book."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/books\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/books\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/books\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the book."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

@@ -1,0 +1,632 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://interview-app-1.test'
+paths:
+  /api/user:
+    get:
+      summary: ''
+      operationId: getApiUser
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+  /api/books:
+    get:
+      summary: ''
+      operationId: getApiBooks
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  current_page: 1
+                  data:
+                    -
+                      id: 1
+                      title: 'Ipsam hic error neque rerum quas porro.'
+                      writer_id: 7
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 198.93
+                      tags:
+                        - quia
+                        - cupiditate
+                        - cumque
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 2
+                      title: 'Sunt esse suscipit rerum voluptatibus aut.'
+                      writer_id: 6
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 183.86
+                      tags:
+                        - sapiente
+                        - quia
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 3
+                      title: 'Aspernatur quo sint et nisi a.'
+                      writer_id: 10
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 157.52
+                      tags:
+                        - cupiditate
+                        - quia
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 4
+                      title: 'Omnis et qui beatae ea quibusdam.'
+                      writer_id: 3
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 129.64
+                      tags:
+                        - voluptas
+                        - impedit
+                        - quia
+                        - sapiente
+                        - unde
+                        - cumque
+                        - voluptas
+                        - repellendus
+                        - quo
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 5
+                      title: 'Consequatur quia sequi voluptas omnis velit ut fuga quam.'
+                      writer_id: 2
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 140.54
+                      tags:
+                        - sapiente
+                        - quo
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 6
+                      title: 'Minus dolor vel earum omnis quidem quia omnis.'
+                      writer_id: 6
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 103.71
+                      tags:
+                        - voluptas
+                        - repellendus
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 7
+                      title: 'Impedit harum cupiditate molestiae dolores delectus.'
+                      writer_id: 8
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 140.76
+                      tags:
+                        - sapiente
+                        - cupiditate
+                        - voluptas
+                        - repellendus
+                        - quo
+                        - unde
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 8
+                      title: 'Voluptatem quis rerum vitae eius.'
+                      writer_id: 9
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 100.08
+                      tags:
+                        - cupiditate
+                        - quo
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 9
+                      title: 'Occaecati nisi reprehenderit sapiente eum necessitatibus aperiam.'
+                      writer_id: 4
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 161.75
+                      tags:
+                        - cupiditate
+                        - sapiente
+                        - quia
+                        - impedit
+                        - quo
+                        - unde
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 10
+                      title: 'Quas corrupti doloremque explicabo deserunt ratione.'
+                      writer_id: 1
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 122.82
+                      tags:
+                        - voluptas
+                        - repellendus
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 11
+                      title: 'Odit enim sit vitae.'
+                      writer_id: 4
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 106.52
+                      tags:
+                        - cupiditate
+                        - cumque
+                        - quo
+                        - impedit
+                        - sapiente
+                        - voluptas
+                        - voluptas
+                        - repellendus
+                        - quia
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 12
+                      title: 'Veniam vero et pariatur explicabo quas.'
+                      writer_id: 10
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 131.26
+                      tags:
+                        - impedit
+                        - voluptas
+                        - quia
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 13
+                      title: 'Soluta non aspernatur et sed molestiae quaerat.'
+                      writer_id: 10
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 181.57
+                      tags:
+                        - unde
+                        - cumque
+                        - quia
+                        - voluptas
+                        - voluptas
+                        - impedit
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 14
+                      title: 'Non tempore est dolores nulla velit.'
+                      writer_id: 6
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 126.78
+                      tags:
+                        - cumque
+                        - voluptas
+                        - impedit
+                        - unde
+                        - quia
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                    -
+                      id: 15
+                      title: 'Eum iusto placeat exercitationem quis natus.'
+                      writer_id: 9
+                      cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                      price: 153.85
+                      tags:
+                        - unde
+                        - repellendus
+                        - cupiditate
+                        - impedit
+                        - sapiente
+                      created_at: '2024-05-01T05:31:13.000000Z'
+                      updated_at: '2024-05-01T05:31:13.000000Z'
+                  first_page_url: 'http://interview-app-1.test/api/books?page=1'
+                  from: 1
+                  last_page: 2
+                  last_page_url: 'http://interview-app-1.test/api/books?page=2'
+                  links:
+                    -
+                      url: null
+                      label: '&laquo; Previous'
+                      active: false
+                    -
+                      url: 'http://interview-app-1.test/api/books?page=1'
+                      label: '1'
+                      active: true
+                    -
+                      url: 'http://interview-app-1.test/api/books?page=2'
+                      label: '2'
+                      active: false
+                    -
+                      url: 'http://interview-app-1.test/api/books?page=2'
+                      label: 'Next &raquo;'
+                      active: false
+                  next_page_url: 'http://interview-app-1.test/api/books?page=2'
+                  path: 'http://interview-app-1.test/api/books'
+                  per_page: 15
+                  prev_page_url: null
+                  to: 15
+                  total: 20
+                properties:
+                  current_page:
+                    type: integer
+                    example: 1
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        title: 'Ipsam hic error neque rerum quas porro.'
+                        writer_id: 7
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 198.93
+                        tags:
+                          - quia
+                          - cupiditate
+                          - cumque
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 2
+                        title: 'Sunt esse suscipit rerum voluptatibus aut.'
+                        writer_id: 6
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 183.86
+                        tags:
+                          - sapiente
+                          - quia
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 3
+                        title: 'Aspernatur quo sint et nisi a.'
+                        writer_id: 10
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 157.52
+                        tags:
+                          - cupiditate
+                          - quia
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 4
+                        title: 'Omnis et qui beatae ea quibusdam.'
+                        writer_id: 3
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 129.64
+                        tags:
+                          - voluptas
+                          - impedit
+                          - quia
+                          - sapiente
+                          - unde
+                          - cumque
+                          - voluptas
+                          - repellendus
+                          - quo
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 5
+                        title: 'Consequatur quia sequi voluptas omnis velit ut fuga quam.'
+                        writer_id: 2
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 140.54
+                        tags:
+                          - sapiente
+                          - quo
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 6
+                        title: 'Minus dolor vel earum omnis quidem quia omnis.'
+                        writer_id: 6
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 103.71
+                        tags:
+                          - voluptas
+                          - repellendus
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 7
+                        title: 'Impedit harum cupiditate molestiae dolores delectus.'
+                        writer_id: 8
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 140.76
+                        tags:
+                          - sapiente
+                          - cupiditate
+                          - voluptas
+                          - repellendus
+                          - quo
+                          - unde
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 8
+                        title: 'Voluptatem quis rerum vitae eius.'
+                        writer_id: 9
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 100.08
+                        tags:
+                          - cupiditate
+                          - quo
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 9
+                        title: 'Occaecati nisi reprehenderit sapiente eum necessitatibus aperiam.'
+                        writer_id: 4
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 161.75
+                        tags:
+                          - cupiditate
+                          - sapiente
+                          - quia
+                          - impedit
+                          - quo
+                          - unde
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 10
+                        title: 'Quas corrupti doloremque explicabo deserunt ratione.'
+                        writer_id: 1
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 122.82
+                        tags:
+                          - voluptas
+                          - repellendus
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 11
+                        title: 'Odit enim sit vitae.'
+                        writer_id: 4
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 106.52
+                        tags:
+                          - cupiditate
+                          - cumque
+                          - quo
+                          - impedit
+                          - sapiente
+                          - voluptas
+                          - voluptas
+                          - repellendus
+                          - quia
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 12
+                        title: 'Veniam vero et pariatur explicabo quas.'
+                        writer_id: 10
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 131.26
+                        tags:
+                          - impedit
+                          - voluptas
+                          - quia
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 13
+                        title: 'Soluta non aspernatur et sed molestiae quaerat.'
+                        writer_id: 10
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 181.57
+                        tags:
+                          - unde
+                          - cumque
+                          - quia
+                          - voluptas
+                          - voluptas
+                          - impedit
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 14
+                        title: 'Non tempore est dolores nulla velit.'
+                        writer_id: 6
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 126.78
+                        tags:
+                          - cumque
+                          - voluptas
+                          - impedit
+                          - unde
+                          - quia
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                      -
+                        id: 15
+                        title: 'Eum iusto placeat exercitationem quis natus.'
+                        writer_id: 9
+                        cover_image: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price: 153.85
+                        tags:
+                          - unde
+                          - repellendus
+                          - cupiditate
+                          - impedit
+                          - sapiente
+                        created_at: '2024-05-01T05:31:13.000000Z'
+                        updated_at: '2024-05-01T05:31:13.000000Z'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        title:
+                          type: string
+                          example: 'Ipsam hic error neque rerum quas porro.'
+                        writer_id:
+                          type: integer
+                          example: 7
+                        cover_image:
+                          type: string
+                          example: 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg'
+                        price:
+                          type: number
+                          example: 198.93
+                        tags:
+                          type: array
+                          example:
+                            - quia
+                            - cupiditate
+                            - cumque
+                          items:
+                            type: string
+                        created_at:
+                          type: string
+                          example: '2024-05-01T05:31:13.000000Z'
+                        updated_at:
+                          type: string
+                          example: '2024-05-01T05:31:13.000000Z'
+                  first_page_url:
+                    type: string
+                    example: 'http://interview-app-1.test/api/books?page=1'
+                  from:
+                    type: integer
+                    example: 1
+                  last_page:
+                    type: integer
+                    example: 2
+                  last_page_url:
+                    type: string
+                    example: 'http://interview-app-1.test/api/books?page=2'
+                  links:
+                    type: array
+                    example:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        active: false
+                      -
+                        url: 'http://interview-app-1.test/api/books?page=1'
+                        label: '1'
+                        active: true
+                      -
+                        url: 'http://interview-app-1.test/api/books?page=2'
+                        label: '2'
+                        active: false
+                      -
+                        url: 'http://interview-app-1.test/api/books?page=2'
+                        label: 'Next &raquo;'
+                        active: false
+                    items:
+                      type: object
+                      properties:
+                        url:
+                          type: string
+                          example: null
+                        label:
+                          type: string
+                          example: '&laquo; Previous'
+                        active:
+                          type: boolean
+                          example: false
+                  next_page_url:
+                    type: string
+                    example: 'http://interview-app-1.test/api/books?page=2'
+                  path:
+                    type: string
+                    example: 'http://interview-app-1.test/api/books'
+                  per_page:
+                    type: integer
+                    example: 15
+                  prev_page_url:
+                    type: string
+                    example: null
+                  to:
+                    type: integer
+                    example: 15
+                  total:
+                    type: integer
+                    example: 20
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      operationId: postApiBooks
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  '/api/books/{id}':
+    get:
+      summary: ''
+      operationId: getApiBooksId
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ''
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      operationId: putApiBooksId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    delete:
+      summary: ''
+      operationId: deleteApiBooksId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the book.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+tags:
+  -
+    name: Endpoints
+    description: ''
