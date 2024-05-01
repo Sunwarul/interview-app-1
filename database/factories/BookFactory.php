@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Tag;
+use App\Models\Writer;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +19,11 @@ class BookFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title' => $this->faker->sentence(),
+            'writer_id' => $this->faker->randomElement(Writer::all()->pluck('id')),
+            'cover_image' => 'https://images-na.ssl-images-amazon.com/images/I/51Ga5GuElyL._AC_SX184_.jpg',
+            'price' => $this->faker->randomFloat(2, 100, 200),
+            'tags' => Tag::inRandomOrder()->limit($this->faker->randomNumber(1))->pluck('name'),
         ];
     }
 }

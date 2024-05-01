@@ -13,11 +13,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(10)->create();
+        // Make test users if don't have any
+        if (User::count() === 0) {
+            User::factory()->create([
+                'name' => 'Admin User',
+                'email' => 'admin@admin.com',
+            ]);
+            User::factory(10)->create();
+        }
 
-        User::factory()->create([
-            'name' => 'Admin User',
-            'email' => 'admin@admin.com',
-        ]);
+        $this->call(BookSeeder::class);
     }
 }
