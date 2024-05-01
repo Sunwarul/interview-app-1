@@ -8,5 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Book extends Model
 {
     use HasFactory;
-    protected $guarded = [];
+    protected $fillable = [
+        'title', 'writer_id', 'cover_image', 'price', 'tags',
+    ];
+
+    protected $casts = [
+        'tags' => 'json',
+    ];
 }

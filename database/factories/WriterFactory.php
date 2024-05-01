@@ -17,7 +17,7 @@ class WriterFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->titleMale . ' ' . $this->faker->firstNameMale . ' ' . $this->faker->lastName,
+            'name' => $this->faker->sentence(3),
         ];
     }
 }
