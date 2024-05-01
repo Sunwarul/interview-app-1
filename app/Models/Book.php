@@ -15,4 +15,9 @@ class Book extends Model
     protected $casts = [
         'tags' => 'json',
     ];
+
+    public function writer()
+    {
+        return $this->belongsTo(Writer::class);
+    }
 }

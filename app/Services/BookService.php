@@ -8,7 +8,7 @@ class BookService
 {
     public function getAllBook()
     {
-        return Book::paginate();
+        return Book::with('writer')->paginate();
     }
 
     public function storeBook(array $bookRequest)
